@@ -1,0 +1,25 @@
+.Wrapper,
+body {
+    height: 400px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.Wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.div1{
+    background-color: rgb(203, 186, 52);
+    flex: 1;
+}
+
+.div2{
+    background-color: blueviolet;
+    flex: 1;
+}
+.div3{
+    background-color: rgb(40, 137, 116);
+    flex: 1;
+}
