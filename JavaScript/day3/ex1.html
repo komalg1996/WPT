@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <h1>Events </h1>
+    <p id="demo"></p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Check time</button>
+    
+    <button onclick="this.innerHTML=Date()">Check this time</button>
+
+    <p>Function for date</p>
+    <p id="demo1"></p>
+    <button onclick="displayDate()">Check time function</button>
+    <Script>
+           function displayDate(){
+            document.getElementById("demo1").innerHTML=Date();
+           }
+
+    </Script>
+</body>
+
+</html>

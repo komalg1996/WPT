@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <h1>javaScript String</h1>
+    <p id="demo"></p>
+    <h2>Never Create Strings as Objects</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+    <p id="demo1"></p>
+    <h1>JavaScript Strings</h1>
+    <h2>The length Property</h2>
+    <p>The length of the string is:</p>
+    <p id="demo2"></p>
+    <h1>JavaScript Strings</h1>
+    <h2>The slice() Method</h2>
+
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="demo3"></p>
+
+    <h1>JavaScript String Methods</h1>
+    <p>Replace "place" with "world" in the paragraph below:</p>
+    <button onclick="toReplace()">Try it</button>
+    <p id="demo4">Welcome to my place</p>
+
+    <script>
+        let x = "pratik"
+        let y = new String("pratik")
+
+        document.getElementById('demo').innerHTML =
+            typeof x + "<br>" + typeof y;
+
+
+        document.getElementById("demo1").innerHTML = (x == y);
+
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo2").innerHTML = text.length;
+
+        let temp = "Apple, Banana, Kiwi";
+        let part = temp.slice(7, 13);
+        document.getElementById("demo3").innerHTML = part;
+
+        function toReplace() {
+            let ex = document.getElementById('demo4').innerHTML;
+            document.getElementById('demo4').innerHTML =  
+            ex.replace("place", "world");
+        }
+ 
+    </script>
+
+
+</body>
+
+</html>
